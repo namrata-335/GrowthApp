@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC"
+    android:padding="24dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal">
+
+<TextView
+    android:id="@+id/titleText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choose 2 Core Goals"
+    android:textColor="#6E5849"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp" />
+
+<!-- Checkboxes for goals -->
+<CheckBox
+    android:id="@+id/checkbox_meditation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Meditation"
+    android:textColor="#4F4F4F"
+    android:textSize="18sp" />
+
+<CheckBox
+    android:id="@+id/checkbox_journaling"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Journaling"
+    android:textColor="#4F4F4F"
+    android:textSize="18sp" />
+
+<CheckBox
+    android:id="@+id/checkbox_exercise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Exercise"
+    android:textColor="#4F4F4F"
+    android:textSize="18sp" />
+
+<CheckBox
+    android:id="@+id/checkbox_skill"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Practicing a Skill"
+    android:textColor="#4F4F4F"
+    android:textSize="18sp" />
+
+<CheckBox
+    android:id="@+id/checkbox_reading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Reading 10 Pages"
+    android:textColor="#4F4F4F"
+    android:textSize="18sp" />
+
+<TextView
+    android:id="@+id/warningText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please select exactly 2 goals."
+    android:textColor="#B22222"
+    android:visibility="gone"
+    android:layout_marginTop="12dp"
+    android:textSize="14sp" />
+
+
+<Button
+    android:id="@+id/submitGoalsButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Continue"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#8B5E3C"
+    android:layout_marginTop="24dp"
+    android:padding="10dp" />
+</LinearLayout>
+    </ScrollView>

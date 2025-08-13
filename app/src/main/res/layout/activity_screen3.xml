@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1EC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add two additional reminders"
+            android:textColor="#6D4C41"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These are small steps that will also lead to big changes."
+            android:textColor="#757575"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Reminder 1 input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/reminder1"
+                android:layout_width="76dp"
+                android:layout_height="79dp"
+                android:layout_weight="1"
+                android:backgroundTint="#BCAAA4"
+                android:hint="drink green tea"
+                android:padding="10dp"
+                android:textColor="#5D4037"
+                android:textColorHint="#BDBDBD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" at "
+                android:textColor="#5D4037"
+                android:textSize="16sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp" />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:timePickerMode="spinner" />
+        </LinearLayout>
+
+        <!-- Reminder 2 input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/reminder2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="practice handstand"
+                android:textColorHint="#BDBDBD"
+                android:backgroundTint="#BCAAA4"
+                android:padding="10dp"
+                android:textColor="#5D4037" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" at "
+                android:textColor="#5D4037"
+                android:textSize="16sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp" />
+
+            <TimePicker
+                android:id="@+id/timePicker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+        </LinearLayout>
+
+        <!-- Continue button -->
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8D6E63"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

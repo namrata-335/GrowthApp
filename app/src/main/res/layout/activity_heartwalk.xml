@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1EC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Walk"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#6D4C41"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you can think it in your mind, you can hold it in your hand.\n\nWhatever you want to see, is what you will see, and that is the power of setting intentions.\n\nGo on a walk with the intention of finding hearts — a leaf, a stain, a cloud, a shadow, a rock. Every time you see one, press the counter."
+            android:textColor="#757575"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Counter display -->
+        <TextView
+            android:id="@+id/heartCounterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hearts Found: 0"
+            android:textSize="20sp"
+            android:textColor="#5D4037"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Button to add to counter -->
+        <Button
+            android:id="@+id/incrementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Found a Heart ❤️"
+            android:backgroundTint="#A1887F"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+<!--        Reset Button-->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:backgroundTint="#BCAAA4"
+            android:textColor="#FFFFFF" />
+
+<!--        Back to dashboard button-->
+        <Button
+            android:id="@+id/backToDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Dashboard"
+            android:backgroundTint="#BCAAA4"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
